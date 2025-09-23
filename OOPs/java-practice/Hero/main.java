@@ -12,8 +12,8 @@ public class Main{
     // Creating hero using parameterized constructor
     Hero hero2 = new Hero("baka", 33 , "gigantic" , "green" );
     System.out.println(hero2.display());
-  }
 
     Hero hero3 = new Hero(Hero2);
     System.out.println(hero3.display());
+}
 }
