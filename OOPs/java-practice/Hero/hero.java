@@ -25,8 +25,16 @@ public class Hero {
         this.dressColor = dressColor;
     	}
 
+	// Copy constructor
+	public Hero(Hero other){
+		this.name = other.name;
+		this.age = other.age;
+		this.power = other.power;
+		this.dressColor = other.dressColor;
+	}
+
 	//Setters and Getters
-    public String setName(String name){
+    public void setName(String name){
     	this.name = name;
     }
     
@@ -43,7 +51,7 @@ public class Hero {
         }
     }
     
-    public String getAge(){
+    public int getAge(){
     	return age;
     }
     
@@ -64,8 +72,9 @@ public class Hero {
     }
     
     public String display(){
-    	return "your Hero name is: " + name + " and he/she is " + age+ " years old, having power of " + power + " and has dress in " +dressColor+ " color."
+    	return "your Hero name is: " + name + " and he/she is " + age+ " years old, having power of " + power + " and has dress in " +dressColor+ " color.";
     }
 
 
 }
+
